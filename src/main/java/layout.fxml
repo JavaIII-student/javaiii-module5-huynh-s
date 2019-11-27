@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="615.0" prefWidth="763.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="module5.MoviesController">
+   <children>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="615.0" prefWidth="763.0">
+         <children>
+            <TableView fx:id="movieDBTable" layoutX="45.0" layoutY="64.0" prefHeight="502.0" prefWidth="588.0">
+              <columns>
+                <TableColumn fx:id="idCol" editable="false" prefWidth="60.0" text="ID" />
+                <TableColumn fx:id="nameCol" editable="false" prefWidth="160.00000762939453" text="NAME" />
+                <TableColumn fx:id="descCol" editable="false" prefWidth="284.7999572753906" text="DESCRIPTION" />
+                <TableColumn fx:id="ratingCol" editable="false" minWidth="9.0" prefWidth="82.4000244140625" text="RATING" />
+              </columns>
+            </TableView>
+            <!--<TextField fx:id="searchBar" layoutX="103.0" layoutY="27.0" onKeyTyped="#searchStringChanged" prefHeight="25.0" prefWidth="193.0" promptText="Search Movies by Name" />-->
+            <Button fx:id="addButton" layoutX="646.0" layoutY="84.0" mnemonicParsing="false" onAction="#addButtonPressed" prefHeight="25.0" prefWidth="100.0" text="Add Movie" />
+            <Button fx:id="editButton" disable="true" layoutX="646.0" layoutY="124.0" mnemonicParsing="false" onAction="#editButtonPressed" prefHeight="25.0" prefWidth="100.0" text="Edit" />
+            <Button fx:id="deleteButton" disable="true" layoutX="646.0" layoutY="164.0" mnemonicParsing="false" onAction="#deleteButtonPressed" prefHeight="25.0" prefWidth="100.0" text="Delete" />
+            <!--<Label layoutX="45.0" layoutY="31.0" text="Search: " />-->
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
